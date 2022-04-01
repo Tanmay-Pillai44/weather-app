@@ -8,6 +8,7 @@ body {
     font-size: 120%;
     font-family: 'Open Sans', sans-serif;
     background-image: url("./background.jpeg");
+    background-size: cover;
 }
 
 .card {
