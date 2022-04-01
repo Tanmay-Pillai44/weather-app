@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Weather App</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" class="search-bar" placeholder="Search">
+            <button><span class="material-icons search-icon">search</span></button>
+        </div>
+        <div class="weather loading">
+            <div class="city-box">
+                <h2 class="city">Weather in Pune</h2>
+                <label class="switch">
+                    <input type="checkbox" class="input">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <div class="data-metric">
+                <div class="temp deg-temp">51&deg;C</div>
+                <div class="flex description-box">
+                    <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon deg-icon">
+                    <div class="deg-description">Cloudy</div>
+                </div>
+                <div class="humidity deg-humidity">Humidity: 60%</div>
+                <div class="wind deg-wind">Wind speed: 6.2 m/s</div>
+            </div>
+            <div class="data-imperial hidden">
+                <div class="temp imp-temp">51&deg;F</div>
+                <div class="flex description-box">
+                    <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon imp-icon">
+                    <div class="imp-description">Cloudy</div>
+                </div>
+                <div class="humidity imp-humidity">Humidity: 60%</div>
+                <div class="wind imp-wind">Wind speed: 6.2 mph</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
